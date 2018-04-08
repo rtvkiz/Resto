@@ -20,6 +20,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mfirebase;
+
     private FirebaseAuth.AuthStateListener mlistener;
     public static final int RC_SIGN_IN=1;
     @Override
@@ -85,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         mfirebase.removeAuthStateListener(mlistener);
     }
-    public void signout(){
+    public void signout1(){
         AuthUI.getInstance().signOut(this);
-        return;
+
     }
 
 

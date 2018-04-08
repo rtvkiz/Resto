@@ -33,6 +33,9 @@ import java.util.ArrayList;
 public class resto_adapter extends ArrayAdapter<Resto_list> {
     View listItemView;
     Uri uri;
+    String lon;
+    String lat;
+
     public resto_adapter(Context context, ArrayList<Resto_list> food) {
         super(context, 0, food);
 
@@ -51,23 +54,49 @@ public class resto_adapter extends ArrayAdapter<Resto_list> {
         TextView name = (TextView) listItemView.findViewById(R.id.name);
         name.setText(food1.getname());
         ImageView img = (ImageView) listItemView.findViewById(R.id.image);
-        final String lon=food1.getlog();
-        String lat=food1.getlatt();
-        double latitude = Double.parseDouble(lat);
-        double longitude = Double.parseDouble(lon);
-        String label = "Restaurant";
-        String uriBegin = "geo:" + latitude + "," + longitude;
-        String query = latitude + "," + longitude + "(" + label + ")";
-        String encodedQuery = Uri.encode(query);
-        String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
-        uri = Uri.parse(uriString);
+        if(food1.getname()=="Red Rock") {
 
-
-        try{
-        Glide.with(getContext()).load(food1.getimage()).into(img);}
-        catch(Exception e){
-            Log.i("ggg",e.toString());
+            img.setImageResource(R.drawable.redrock);
         }
+        if(food1.getname().equals("Sadanand")) {
+
+            img.setImageResource(R.drawable.sad);
+        }
+        if(food1.getname().equals("Chef's Restaurant")) {
+
+            img.setImageResource(R.drawable.chef);
+        }
+        if(food1.getname().equals("Sun-City Fine Dine")) {
+
+            img.setImageResource(R.drawable.sun);
+        }
+        if(food1.getname().equals("Hotel Sadanand")) {
+
+            img.setImageResource(R.drawable.sad);
+        }
+        if(food1.getname().equals("Tikka Hut")) {
+
+            img.setImageResource(R.drawable.tikka);
+        }
+        if(food1.getname().equals("Bourn Bon")) {
+
+            img.setImageResource(R.drawable.sun);
+        }
+        if(food1.getname().equals("Ruchitha Panjabi Dhaba")) {
+            img.setImageResource(R.drawable.sun);
+        }
+        if(food1.getname().equals("City Lunch Home")) {
+
+            img.setImageResource(R.drawable.sun);
+        }
+
+        lon=food1.getlog();
+        lat=food1.getlatt();
+
+
+
+
+
         //mIcon_val = BitmapFactory.decodeStream(food1.getimage().openConnection() .getInputStream());
        // img.setImageResource(food1.getimage());
         String url=food1.getimage();

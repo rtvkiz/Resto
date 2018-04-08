@@ -28,6 +28,7 @@
             android:orientation="vertical"
             android:layout_margin="5dp"
             android:layout_gravity="center"
+
             >
 
             <ImageView
@@ -37,6 +38,7 @@
 
                 android:layout_gravity="center"
                 android:layout_marginTop="0dp"
+                android:src="@drawable/sun"
                 />
 
         <TextView
