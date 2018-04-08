@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "598409999120",
+    "firebase_url": "https://resto-aa847.firebaseio.com",
+    "project_id": "resto-aa847",
+    "storage_bucket": "resto-aa847.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598409999120:android:c9cc2fe871c1f61e",
+        "android_client_info": {
+          "package_name": "com.example.android.resto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598409999120-scpgsf10mhg6pc09ia5h93jc56oar4a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.resto",
+            "certificate_hash": "26e0f3f106372b8f299bfaed99bccd7f89508816"
+          }
+        },
+        {
+          "client_id": "598409999120-jcj7b1cpivg3n761rglm96db5bc40mqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP6nZB7dAdaUJywF13QLkLdxGOk23_Ubs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598409999120-jcj7b1cpivg3n761rglm96db5bc40mqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
