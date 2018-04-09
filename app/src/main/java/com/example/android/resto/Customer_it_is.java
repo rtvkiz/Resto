@@ -53,9 +53,137 @@ public class Customer_it_is extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                getRequiredValue();
+                //getRequiredValue();
                 Object abc = lv.getItemAtPosition(i);
+                if(i==0){
 
+                    double latitude=13.0164;
+                    double longitude=74.7894;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+                }
+                if(i==1 || i==4){
+
+                    double latitude=12.9897;
+                    double longitude=74.8001;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+                }
+                if(i==2){
+                    double latitude=12.9863;
+                    double longitude=74.8009;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
+                if(i==3){
+                    double latitude=12.9960;
+                    double longitude=74.7992;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
+                if(i==5){
+                    double latitude=12.9882;
+                    double longitude=74.8021;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
+                if(i==6){
+                    double latitude=13.5960;
+                    double longitude=73.7992;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
+                if(i==7){
+                    double latitude=12.9894;
+                    double longitude=74.8015;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
+
+                if(i==8){
+                    double latitude=12.9894;
+                    double longitude=74.8002;
+                    String label = "Restaurant";
+                    String uriBegin = "geo:" + latitude + "," + longitude;
+                    String query = latitude + "," + longitude + "(" + label + ")";
+                    String encodedQuery = Uri.encode(query);
+                    String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+                    uri = Uri.parse(uriString);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(uri);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+
+                }
             }
 
 

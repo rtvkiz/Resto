@@ -76,18 +76,18 @@ public class resto_adapter extends ArrayAdapter<Resto_list> {
         }
         if(food1.getname().equals("Tikka Hut")) {
 
-            img.setImageResource(R.drawable.tikka);
+            img.setImageResource(R.drawable.reso);
         }
         if(food1.getname().equals("Bourn Bon")) {
 
-            img.setImageResource(R.drawable.sun);
+            img.setImageResource(R.drawable.resto);
         }
         if(food1.getname().equals("Ruchitha Panjabi Dhaba")) {
-            img.setImageResource(R.drawable.sun);
+            img.setImageResource(R.drawable.images);
         }
         if(food1.getname().equals("City Lunch Home")) {
 
-            img.setImageResource(R.drawable.sun);
+            img.setImageResource(R.drawable.inside);
         }
 
         lon=food1.getlog();
